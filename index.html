@@ -1,6 +1,13 @@
 <!doctype html>
-
+<script src="js/jquery-1.12.2.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
 <html lang="en">
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.css' rel='stylesheet' />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+///////////////////////////////// HEAD ////////////////////////////////
 <head>
   <meta charset="utf-8">
 
@@ -8,14 +15,66 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="css/CSS.css">
 
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
 </head>
 
+
+
+///////////////////////////////// BODY ////////////////////////////////
 <body>
-  <script src="js/scripts.js"></script>
+  
+<div class="container-fluid" >
+  <div class="row" >
+    <div class="col-xs-12"> 
+    	<h1>
+    		<i class="fa fa-map"></i> Mill Basin Neighbourhood <span>(A Pluto derived map)</span>
+    	</h1>
+    </div>
+  </div> 
+  <div class="row" >
+    <div class="col-xs-4" >
+
+    </div>
+    <div class="col-xs-4">
+
+    </div>
+    <div class="col-xs-4">
+    	
+    </div>
+  </div>
+
+  <div class="row" > <!-- THE MAP ROW -->
+    <div class="col-xs-2">
+    	<p>
+    		The viewing angle of a building from street can be seen as an approximate landscaping measure showing how much a building can be felt as vertical view blocker. Two required parameters of planar length (d) and height of each lot are derived from Pluto dataset.
+    	</p>
+    	<span>d = sqrt( Lot_Area )</span>
+    	<br>
+    	<span>h = 10 * num_of_floors</span>
+    	<br><br>
+    	<canvas id="canvas" width="250" height="200"></canvas>
+    	<p>
+    		The viewing angle of a building can be seen as an approximate landscaping measure showing how much a building can be felt 
+    	</p>
+    </div>
+    <div class="col-xs-10">
+    	 <div id="map"></div>
+    </div>
+ 
+
+</div>
+
 </body>
+
+
+///////////////////////////////// SCRIPTS ////////////////////////////////
+
+ <script src="js/geojson.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet-src.js"></script>
+  <script src="/js/chroma.min.js"></script>
+ <script src="/js/leaflet_ajax_min.js"></script>
+ <script src="js/JS.js"></script>
+
 </html>
