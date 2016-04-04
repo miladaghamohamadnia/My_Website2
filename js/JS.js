@@ -107,7 +107,7 @@ geojsonLayer.addTo(map)
 //get a reference to the canvas
 var ctx = $('#canvas')[0].getContext("2d");
 //the frame rectangle
-ctx.fillStyle = "rgba(0, 0, 0, .15)"
+ctx.fillStyle = "rgba(0, 0, 0, 0)"
 ctx.beginPath();
 ctx.rect(0, 0, 200, 200);
 ctx.closePath();
