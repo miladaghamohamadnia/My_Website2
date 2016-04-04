@@ -54,8 +54,8 @@ function onEachFeature(feature, layer) {
 
 ///////////////////////////////// MAP INIT ////////////////////////////////
 map = new L.Map('map', { 
-  center: [40.7189,-73.99704],
-  zoom: 15
+  center: [40.7119,-73.99704],
+  zoom: 14
 })
 L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
   attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
