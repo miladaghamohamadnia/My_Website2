@@ -1,6 +1,12 @@
 #map { height: 700px;
         width: 100% 
 }
+#disclaimer { 
+	color: red;
+	font: 36px/38px FontAwesome;
+	font-weight: bolder;
+}
+
 .row .col-xs-2 {
 	height: 700px;
 	background-color:white;
