@@ -6,6 +6,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
 <html lang="en">
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.js'></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.css' rel='stylesheet' />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -48,10 +54,11 @@
 
   <div class="row" > <!-- THE MAP ROW -->
     <div class="col-xs-2">
-    	<p>
+    	<p><span id=summary>Analysis Summary)</span>
+    	<br>
     		The viewing angle of a building from street can be seen as an approximate landscaping measure showing how much a building can be felt as vertical view blocker. Two required parameters of planar length (d) and height of each lot are derived from Pluto dataset.
     	</p>
-    	<span>d = sqrt( Lot_Area )</span>
+    	<span>$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$ d = sqrt( Lot_Area )</span>
     	<br>
     	<span>h = 10 * num_of_floors</span>
     	<br><br>
