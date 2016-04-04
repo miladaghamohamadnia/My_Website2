@@ -77,7 +77,10 @@
 	font: 22px FontAwesome;
 	font-weight: bold;
 }
-.formula{
-	text-align: left;
-	font: 14px FontAwesome;
+.mjx-chtml {
+	text-align: left !important;
+	display: inline !important;
+	color:red;
+	font: 10px Verdana;
+	font-weight: normal;
 }

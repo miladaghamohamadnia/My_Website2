@@ -88,7 +88,7 @@ var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [0, 5, 10, 15, 20, 25, 30, 40],
+        grades = [20, 30, 40, 50, 60, 70],
         labels = [];
 
     // loop through our density intervals and generate a label with a colored square for each interval
@@ -159,3 +159,13 @@ ctx.fillText("street",2,160+20);
 ctx.font="14px Georgia";
 ctx.fillStyle="rgba(0, 0, 0, .9)";
 ctx.fillText("lot",110,160+20);
+
+MathJax.Hub.Config({
+    "HTML-CSS": {
+        styles: {
+            ".MathJax nobr": {
+                padding: "0.2em 0.2em"
+            },
+        }
+    }
+});

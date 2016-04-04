@@ -36,7 +36,7 @@
   <div class="row" >
     <div class="col-xs-12"> 
     	<h1>
-    		<i class="fa fa-map"></i> Lot View Angle of South Manhattan <span>(A Pluto derived map)</span>
+    		<i class="fa fa-map"></i> Lot View Angle of Lower Manhattan <span>(A Pluto derived map)</span>
     	</h1>
     </div>
   </div> 
@@ -58,8 +58,9 @@
     	<br>
     		The viewing angle of a building from street can be seen as an approximate landscaping measure showing how much a building can be felt as vertical view blocker. Two required parameters of planar length (d) and height of each lot are derived from Pluto dataset.
     	</p>
-    	<span class=formula>$$d = sqrt{LotArea}$$</span>
-    	<span class=formula>$$h = 10 * (num of floors)$$</span>
+    	<span class=formula>$$d \approx \sqrt{\text{lot area}}$$</span>
+    	<span class=formula>
+    	$$h \approx 10 \cdot \text{num of floors}$$</span>
     	<br>
     	<canvas id="canvas" width="250" height="200"></canvas>
     </div>
@@ -73,7 +74,7 @@
 
 </div>
     	<p> <br>
-    		<span id=disclaimer color=red>Data and info Disclaimer: </span>"The data provided on this interactive map have been used solely for illustrative purposes and do not hold any accurate scientific form of results to be used in third party publication. The creator shall not be held liable for improper or incorrect use or representation of the data described and/or contained herein."
+    		<span id=disclaimer color=red>Data and info Disclaimer: </span>"The info provided on this interactive map have been used solely for illustrative purposes and do not hold any accurate scientific form of results to be used, referenced or published via third party entities. The creator shall not be held liable for improper or incorrect use or representation of the data described and/or contained herein."
     	</p>
 </body>
 
