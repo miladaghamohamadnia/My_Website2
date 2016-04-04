@@ -69,11 +69,11 @@
 }
 #disclaimer { 
 	color: red;
-	font: 36px/38px FontAwesome;
+	font: 16px FontAwesome;
 	font-weight: bolder;
 }
 #summary { 
 	color: purple;
-	font: 28px/30px FontAwesome;
+	font: 26px FontAwesome;
 	font-weight: bold;
 }
