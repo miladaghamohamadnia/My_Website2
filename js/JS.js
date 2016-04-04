@@ -74,11 +74,11 @@ info.update = function (props) {
     this._div.innerHTML = '<h3> Lot View Angle </h3>' + 
         '<h3>     </h3>' + (props ?
         '<b>' + '</b><br />'  + props.address +
-        '</b><br />'  + 'h :  ' + Round_2(10*props.numfloors) + 
-        '</b><br />' + 'd :  ' + Round_2(Math.sqrt(props.lotarea)) + 
+        '</b><br />'  + 'h :  ' + Round_2(10*props.numfloors) + ' feet' +
+        '</b><br />' + 'd :  ' + Round_2(Math.sqrt(props.lotarea)) + ' feet' +
         '</b><br />' + 'angle :  ' + Round_2(Math.
           degrees(Math.atan(10*props.numfloors/Math.sqrt(props.lotarea))))
-        + ' degrees' : '');
+        + ' degrees' : '                   ');
 };
 info.addTo(map);
 
